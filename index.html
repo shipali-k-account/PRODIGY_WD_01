@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navigation Menu</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <nav id="navbar">
+        <h1 class="logo">SavorSpot</h1>
+
+        <ul>
+            <li><a href="#home" class="nav-link"  >Home</a></li>
+            <li><a href="#menu" class="nav-link"  >Menu</a></li>
+            <li><a href="#Reservations" class="nav-link"  >Reservations</a></li>
+            <li><a href="#order" class="nav-link"  >Order Online</a></li>
+            <li><a href="#login" class="nav-link">Login</a></li>
+        </ul>
+    </nav>
+</header>
+<!-- home section-->
+
+<section id="home" class="heading">
+    <div class="heading-content">
+      <h2>Welcome to SavorSpot</h2>
+      <p> where flavors come to life!</p>
+      <a href="#menu"class="btn">View Menu</a>
+        
+    </div>
+</section>
+
+<!-- menu section -->
+<section id="menu" class="menuClass">
+    <h1>Our Menu</h1>
+    <div class="menu-container">
+        <div class="category">
+            <h2>Burgers</h2>
+            <ul>
+                <li>Cheese Burger<span>₹249</span></li>
+                <li>Spicy Burger<span>₹249</span></li>
+                <li>Veg. Burger <span>₹199</span></li>
+                <li>Paneer Burger <span>₹229</span></li>
+
+            </ul>
+        </div>
+        <div class="category">
+            <h2> Pizzas</h2>
+            <ul>
+                <li>Margherita Pizza <span>₹349</span></li>
+                <li>BBQ Chicken Pizza <span>₹399</span></li>
+                <li>Veggie Supreme Pizza <span>₹379</span></li>
+            </ul>
+        </div>
+
+            <div class="category">
+                <h2>Beverages</h2>
+                <ul>
+                    <li>Fresh Lime Soda <span>₹99</span></li>
+                    <li>Cold Coffee <span>₹149</span></li>
+                    <li>Mango Shake <span>₹129</span></li>
+                </ul>
+            </div>
+
+            <div class="category">
+                <h2> Desserts</h2>
+                <ul>
+                    <li>Chocolate Brownie <span>₹199</span></li>
+                    <li>Blueberry Cheesecake <span>₹249</span></li>
+                    <li>Ice Cream Sundae <span>₹179</span></li>
+                </ul>
+        </div>
+    </div>
+    
+</section> 
+
+<!-- Reservation section-->
+ <section id="Reservations" class="Reservation">
+.<div class="reserv-class">
+    <h2>Make a Reservation</h2>
+    <form id="reserv-form">
+        <input type="text" id="name" placeholder="Your name" required>
+        <input type="email" id="email" placeholder=" your email" required>
+        <input type="time" id="time" placeholder="Reservation-time" required>
+        <input type="date" id="date" placeholder="Reservation-date" required>
+        <button type="submit" class="btn" id="btn">Reserve Now</button>
+
+    </form>
+    </div>
+ </section>
+ <!-- order online section -->
+  <section id="order" class="orderClass">
+    <h2> Order Online </h2>
+    <a href="#menu"class="btn" >Order Now</a>
+  </section>
+
+  <!--login form-->
+  <section  id="login" class="login">
+    <div class="login-container">
+    <h1>Login</h1>
+    <form id="login-form">
+        <input type="text" id="UserName" placeholder="UserName" required>
+        <input type="password" id="password" placeholder="password" required>
+        <button type="submit" class="btn" id="btn" >Login </button>
+
+    </form>
+</div>
+  </section>
+
+
+<script  src="script.js"></script>
+
+    
+</body>
+</html>
