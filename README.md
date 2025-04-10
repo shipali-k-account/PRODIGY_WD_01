@@ -6,11 +6,17 @@ This project is a part of the Prodigy Internship (Task-01). It showcases a respo
 📌 Project Features
 
 🏠 Landing page with fixed navigation
+
 🧾 Menu page displaying food categories
+
 📅 Table reservation form
+
 🛒 Online order section
+
 🔐 Login functionality (UI only)
+
 📱 Fully responsive design for all devices
+
 
 
 🛠️ Technologies Used
@@ -22,18 +28,23 @@ JavaScript – Interactive features
 📸 Screenshots
 
 🖼️ Homepage  
+
 ![Homepage](images/HomePage.png)
 
 🍕 Menu Page  
+
 ![Menu](images/MenuPage.png)
 
 📅 Reservation form
+
 ![Reservation](images/Reservation.png)
 
 🛒 Online order
+
 ![ Online order](images/OnlineOrder.png)
 
 🔐 Login Page
+
 ![ Login Page](images/Login.png)
 
 
