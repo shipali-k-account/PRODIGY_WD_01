@@ -1,6 +1,6 @@
  🍽️ PRODIGY_WD_01 – Responsive Restaurant Website
 
-This project is a part of the Prodigy Internship (Task-01). It showcases a responsive and modern restaurant website built using HTML, CSS, and JavaScript. The website includes essential features such as an interactive menu, reservation form, online ordering system, and user login page—all wrapped in a sleek, user-friendly design.
+This project is a part of the Prodigy Internship (Task-01). It showcases a responsive and modern restaurant website built using HTML, CSS, and JavaScript. The website includes essential features such as an interactive menu, reservation form, online ordering system, and user login page—all wrapped in a sleek,user-friendly design.
 
 
 📌 Project Features
