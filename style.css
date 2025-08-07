@@ -228,34 +228,62 @@ section {
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center; /* Center nav items */
+        padding: 10px;
     }
 
     nav ul {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 10px;
-        justify-content: center;
+        flex-direction: column;
         width: 100%;
-        padding-top: 10px;
+        align-items: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .heading {
+        height: auto;
+        padding: 100px 20px 60px;
+        text-align: center;
+    }
+
+    .heading-content {
+        width: 100%;
+        padding: 20px;
     }
 
     .heading-content h2 {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .heading-content p {
         font-size: 16px;
     }
 
-    .orderClass h2,
-    .menuClass h1 {
-        font-size: 24px;
+    .menuClass,
+    .Reservation,
+    .orderClass,
+    .login {
+        padding: 60px 10px;
     }
 
     .btn {
-        font-size: 14px;
-        padding: 8px 16px;
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .category ul li {
+        font-size: 16px;
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 
