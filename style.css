@@ -1,233 +1,345 @@
-/* Reset & base */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
 body {
-  line-height: 1.6;
-  background-color: #fff8f0;
-  color: #333;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: #ff6f61;
-  color: white;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 .logo {
-  font-size: 1.8rem;
-  font-weight: bold;
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.8s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.2rem;
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
 }
 
 .nav-link {
-  color: white;
-  font-weight: 500;
-  transition: color 0.3s;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    transition: 0.8s;
 }
 
-.nav-link:hover,
+.nav-link:hover {
+    color: #5833ff;
+}
+
 .nav-link.active {
-  color: #ffe8d6;
+    font-weight: bold;
 }
 
-/* Hero Section */
-.hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90vh;
-  background: url('https://source.unsplash.com/1600x900/?food,restaurant') no-repeat center center/cover;
-  text-align: center;
-  color: white;
+html {
+    scroll-behavior: smooth;
 }
 
-.hero-content {
-  background: rgba(0, 0, 0, 0.6);
-  padding: 2rem;
-  border-radius: 10px;
+.heading {
+    background: url('images/photo.jpg') no-repeat center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-.hero h2 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+.heading-content {
+    padding: 40px 20px;
+    border-radius: 40px;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
 }
 
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
+.heading-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: rgba(235, 237, 229, 0.9);
+}
+
+.heading-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-weight: bold;
 }
 
 .btn {
-  padding: 0.6rem 1.2rem;
-  background-color: #ff6f61;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s;
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0a3571;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 .btn:hover {
-  background-color: #e05c50;
+    background: #c44d2d;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
-/* Menu Section */
 .menuClass {
-  padding: 3rem 2rem;
-  background-color: #fff;
-  text-align: center;
+    padding: 60px 20px;
+    background: url('images/foods.jpg') no-repeat center/cover;
+    min-height: 100vh;
 }
 
 .menuClass h1 {
-  margin-bottom: 2rem;
-  color: #ff6f61;
-}
-
-.menu-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
+    color: rgba(1, 5, 12, 0.6);
+    text-shadow: 2px 2px 5px rgba(215, 180, 180, 0.7);
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .category {
-  background: #fff4ec;
-  padding: 1.5rem;
-  border-radius: 10px;
-  width: 250px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    background: rgba(19, 18, 23, 0.4);
+    margin: 25px auto;
+    padding: 15px;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 600px;
+    color: rgb(255, 255, 255);
 }
 
 .category h2 {
-  color: #ff6f61;
-  margin-bottom: 1rem;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
 }
 
 .category ul {
-  list-style: none;
+    list-style: none;
+    padding: 0;
 }
 
-.category li {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #ddd;
+.category ul li {
+    display: flex;
+    justify-content: space-between;
+    font-size: larger;
 }
 
-/* Reservation Section */
 .Reservation {
-  padding: 3rem 2rem;
-  background-color: #fff;
-  text-align: center;
-}
-
-.reserv-class h2 {
-  margin-bottom: 1rem;
-  color: #ff6f61;
+    padding: 20px 20px;
+    margin: 50px auto;
+    border-radius: 10px;
+    width: 90%;
+    min-height: 100vh;
+    max-width: 400px;
 }
 
 #reserv-form {
-  max-width: 400px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#reserv-form input,
-#login-form input {
-  padding: 0.7rem;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+#reserv-form input {
+    width: 80%;
+    max-width: 300px;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
 }
 
-/* Order Section */
+.reserv-class {
+    padding: 10px;
+    background: rgba(61, 184, 228, 0.8);
+    width: 450px;
+    height: 650px;
+    margin: 50px auto;
+    padding-top: 30px;
+    scroll-margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(125, 27, 27, 0.9);
+}
+
+.reserv-class h2 {
+    padding: 10px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+#reserv-form button.btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 18px;
+    background-color: #ffffff;
+    color: #333;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+#reserv-form button.btn:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
 .orderClass {
-  padding: 3rem 2rem;
-  background-color: #fff4ec;
-  text-align: center;
+    padding: 80px 20px;
+    background: url('images/foods.jpg') no-repeat center/cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 
 .orderClass h2 {
-  color: #ff6f61;
-  margin-bottom: 1rem;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
 }
 
-/* Login Section */
+.orderClass .btn {
+    font-size: 20px;
+    padding: 15px 40px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: #ff6347;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.orderClass .btn:hover {
+    background-color: #e04e2a;
+    transform: scale(1.05);
+}
+
 .login {
-  padding: 3rem 2rem;
-  background-color: #fff;
-  text-align: center;
+    padding: 100px;
+}
+
+.login input {
+    width: 85%;
+    padding: 10px;
+    margin: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login h1 {
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .login-container {
-  max-width: 400px;
-  margin: auto;
+    padding: 20px;
+    background: rgba(61, 184, 228, 0.8);
+    width: 400px;
+    height: 350px;
+    margin: 50px auto;
+    padding-top: 30px;
+    scroll-margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(125, 27, 27, 0.9);
 }
 
-.login-container h1 {
-  margin-bottom: 1rem;
-  color: #ff6f61;
+section,
+.menuClass,
+.Reservation,
+.orderClass,
+.login {
+    scroll-margin-top: 100px;
 }
 
-#login-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+@keyframes fadeln {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-/* Media Queries */
+.heading,
+.menuClass,
+.Reservation,
+.orderClass,
+.login {
+    animation: fadeln 4s ease-in-out;
+}
+
+/* ✅ Responsive Design (Mobile View) */
 @media (max-width: 768px) {
-  .nav-links {
-    flex-direction: column;
-    background-color: #ff6f61;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 200px;
-    display: none;
-  }
+    nav {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
 
-  .navbar.active .nav-links {
-    display: flex;
-  }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 
-  .menu-container {
-    flex-direction: column;
-    align-items: center;
-  }
+    .heading-content {
+        padding: 20px;
+    }
 
-  .hero h2 {
-    font-size: 2rem;
-  }
+    .heading-content h2 {
+        font-size: 32px;
+    }
 
-  .hero p {
-    font-size: 1rem;
-  }
+    .heading-content p {
+        font-size: 18px;
+    }
+
+    .menuClass h1,
+    .category h2 {
+        font-size: 24px;
+    }
+
+    .orderClass h2 {
+        font-size: 32px;
+    }
+
+    .reserv-class,
+    .login-container {
+        width: 90%;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
 }
-
-
 
   
