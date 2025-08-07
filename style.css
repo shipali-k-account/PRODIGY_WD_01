@@ -73,16 +73,18 @@ nav ul li {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 60px;
+    text-align: center;
     color: white;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
-     text-align: center;
+    padding: 0; /* ✅ Remove top padding */ 
 }
 
 .heading-content {
-    background: rgba(0, 0, 0, 0.4);
+     background: rgba(0, 0, 0, 0.4);
     padding: 30px;
     border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
 }
 
 .heading-content h2 {
