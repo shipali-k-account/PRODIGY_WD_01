@@ -1,106 +1,183 @@
-/* ✅ Reset */
+/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f8f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
   color: #333;
+  background-color: #f8f8f8;
 }
 
-/* ✅ Navbar */
+/* Navbar */
+header {
+  background: #333;
+  color: white;
+}
+
 .navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #fff;
-  padding: 15px 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
   flex-wrap: wrap;
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 1.8rem;
   font-weight: bold;
-  color: #000;
 }
 
 .nav-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
   list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .nav-link {
   text-decoration: none;
-  color: #000;
-  font-size: 16px;
-  transition: color 0.3s;
-}
-
-.nav-link:hover {
-  color: #c44d2d;
-}
-
-/* ✅ Hero Section */
-.hero {
-  height: 100vh;
-  background: url('images/photo.jpg') no-repeat center/cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 100px 20px 40px 20px; /* top adjusted for navbar */
-  text-align: center;
-}
-
-.hero-content {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 40px 20px;
-  border-radius: 15px;
   color: white;
-  max-width: 600px;
-  width: 100%;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #f39c12;
+}
+
+/* Hero Section */
+.hero {
+  background: url('images/photo.jpg') no-repeat center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
 }
 
 .hero-content h2 {
-  font-size: 36px;
-  margin-bottom: 15px;
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 .hero-content p {
-  font-size: 18px;
-  margin-bottom: 25px;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
-/* ✅ Button */
 .btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #0a3571;
+  padding: 0.7rem 1.5rem;
+  background: #f39c12;
   color: white;
-  text-decoration: none;
+  border: none;
   border-radius: 5px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #c44d2d;
-  transform: scale(1.05);
+  background: #e67e22;
 }
 
-/* ✅ Responsive Layout */
+/* Menu Section */
+.menuClass {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.menuClass h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.category h2 {
+  margin-bottom: 1rem;
+  color: #f39c12;
+}
+
+.category ul {
+  list-style: none;
+}
+
+.category li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+/* Reservation Section */
+.Reservation {
+  background: #f0f0f0;
+  padding: 2rem;
+}
+
+.reserv-class {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+#reserv-form input,
+#reserv-form button {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Order Section */
+.orderClass {
+  padding: 2rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.orderClass h2 {
+  margin-bottom: 1rem;
+}
+
+/* Login Section */
+.login {
+  padding: 2rem;
+  background-color: #f0f0f0;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container input,
+.login-container button {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Responsive Nav */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -108,27 +185,28 @@ body {
   }
 
   .nav-links {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 10px;
+    flex-direction: column;
     width: 100%;
   }
 
+  .nav-links li {
+    width: 100%;
+    text-align: left;
+    padding: 0.5rem 0;
+  }
+
   .hero-content h2 {
-    font-size: 28px;
+    font-size: 2.2rem;
   }
 
   .hero-content p {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-content {
-    padding: 30px 15px;
+    font-size: 1rem;
   }
 
   .btn {
-    padding: 8px 16px;
+    width: 100%;
   }
 }
+
+
+  
