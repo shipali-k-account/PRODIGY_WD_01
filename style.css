@@ -298,7 +298,7 @@ section,
     animation: fadeln 4s ease-in-out;
 }
 
-/* ✅ Responsive Design (Mobile View) */
+
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
