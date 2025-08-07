@@ -8,10 +8,6 @@ function showOnlySection(targetId) {
         }
     });
 }
-
-
-
-
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', function (e) {
         e.preventDefault();
@@ -19,8 +15,6 @@ document.querySelectorAll('.nav-link').forEach(link => {
         showOnlySection(targetId);
     });
 });
-
-
 window.addEventListener('DOMContentLoaded', () => {
     showOnlySection('home');
 });
