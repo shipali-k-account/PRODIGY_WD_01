@@ -76,6 +76,7 @@ nav ul li {
     padding-top: 60px;
     color: white;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+     text-align: center;
 }
 
 .heading-content {
