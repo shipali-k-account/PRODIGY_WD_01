@@ -1,19 +1,22 @@
+/* ✅ Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ✅ General Styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f8f8;
-    margin: 0;
-    padding: 0;
     text-align: center;
 }
 
-.logo {
-    color: #000;
-    font-size: 30px;
-    font-weight: bold;
-    transition: 0.8s;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+html {
+    scroll-behavior: smooth;
 }
 
+/* ✅ Navigation Bar */
 nav {
     position: fixed;
     top: 0;
@@ -27,9 +30,16 @@ nav {
     padding: 10px 50px;
 }
 
+.logo {
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.8s;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 nav ul {
     list-style: none;
-    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,10 +64,7 @@ nav ul li {
     font-weight: bold;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
+/* ✅ Hero Section */
 .heading {
     background: url('images/photo.jpg') no-repeat center/cover;
     height: 100vh;
@@ -66,6 +73,7 @@ html {
     align-items: center;
     color: white;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    padding: 0 20px;
 }
 
 .heading-content {
@@ -73,14 +81,12 @@ html {
     border-radius: 40px;
     font-size: 32px;
     font-weight: bold;
-    text-align: center;
     background: rgba(0, 0, 0, 0.3);
 }
 
 .heading-content h2 {
     font-size: 48px;
     margin-bottom: 20px;
-    font-weight: bold;
     color: rgba(235, 237, 229, 0.9);
 }
 
@@ -90,6 +96,7 @@ html {
     font-weight: bold;
 }
 
+/* ✅ Buttons */
 .btn {
     display: inline-block;
     padding: 10px 20px;
@@ -104,9 +111,9 @@ html {
 .btn:hover {
     background: #c44d2d;
     transform: scale(1.1);
-    cursor: pointer;
 }
 
+/* ✅ Menu Section */
 .menuClass {
     padding: 60px 20px;
     background: url('images/foods.jpg') no-repeat center/cover;
@@ -127,11 +134,10 @@ html {
     border-radius: 20px;
     width: 80%;
     max-width: 600px;
-    color: rgb(255, 255, 255);
+    color: #fff;
 }
 
 .category h2 {
-    color: white;
     font-size: 36px;
     font-weight: bold;
 }
@@ -147,13 +153,13 @@ html {
     font-size: larger;
 }
 
+/* ✅ Reservation */
 .Reservation {
-    padding: 20px 20px;
+    padding: 20px;
     margin: 50px auto;
-    border-radius: 10px;
     width: 90%;
-    min-height: 100vh;
     max-width: 400px;
+    min-height: 100vh;
 }
 
 #reserv-form {
@@ -171,19 +177,18 @@ html {
 }
 
 .reserv-class {
-    padding: 10px;
+    padding: 30px 20px;
     background: rgba(61, 184, 228, 0.8);
     width: 450px;
-    height: 650px;
+    max-width: 90%;
+    height: auto;
     margin: 50px auto;
-    padding-top: 30px;
     scroll-margin-top: 50px;
     border-radius: 15px;
     box-shadow: 0px 4px 8px rgba(125, 27, 27, 0.9);
 }
 
 .reserv-class h2 {
-    padding: 10px;
     font-size: 36px;
     font-weight: bold;
 }
@@ -197,7 +202,6 @@ html {
     font-weight: bold;
     border: none;
     border-radius: 8px;
-    cursor: pointer;
     transition: 0.3s ease;
 }
 
@@ -206,13 +210,13 @@ html {
     transform: scale(1.05);
 }
 
+/* ✅ Order Section */
 .orderClass {
     padding: 80px 20px;
     background: url('images/foods.jpg') no-repeat center/cover;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     color: white;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
@@ -221,8 +225,6 @@ html {
 .orderClass h2 {
     font-size: 60px;
     font-weight: bold;
-    color: white;
-    text-align: center;
 }
 
 .orderClass .btn {
@@ -233,7 +235,6 @@ html {
     background-color: #ff6347;
     color: white;
     font-weight: bold;
-    cursor: pointer;
     transition: 0.3s ease;
 }
 
@@ -242,6 +243,7 @@ html {
     transform: scale(1.05);
 }
 
+/* ✅ Login */
 .login {
     padding: 100px;
 }
@@ -263,7 +265,8 @@ html {
     padding: 20px;
     background: rgba(61, 184, 228, 0.8);
     width: 400px;
-    height: 350px;
+    max-width: 90%;
+    height: auto;
     margin: 50px auto;
     padding-top: 30px;
     scroll-margin-top: 50px;
@@ -271,6 +274,7 @@ html {
     box-shadow: 0px 4px 8px rgba(125, 27, 27, 0.9);
 }
 
+/* ✅ Section Scroll Margin */
 section,
 .menuClass,
 .Reservation,
@@ -279,6 +283,7 @@ section,
     scroll-margin-top: 100px;
 }
 
+/* ✅ Animation */
 @keyframes fadeln {
     from {
         opacity: 0;
@@ -298,7 +303,9 @@ section,
     animation: fadeln 4s ease-in-out;
 }
 
+/* ✅ Media Queries */
 
+/* 📱 Mobile (≤768px) */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -310,10 +317,6 @@ section,
         gap: 10px;
     }
 
-    .heading-content {
-        padding: 20px;
-    }
-
     .heading-content h2 {
         font-size: 32px;
     }
@@ -323,12 +326,9 @@ section,
     }
 
     .menuClass h1,
-    .category h2 {
-        font-size: 24px;
-    }
-
+    .category h2,
     .orderClass h2 {
-        font-size: 32px;
+        font-size: 26px;
     }
 
     .reserv-class,
@@ -342,8 +342,31 @@ section,
     }
 }
 
+/* 💻 Tablet (769px–1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    nav {
+        padding: 10px 30px;
+    }
 
+    .heading-content h2 {
+        font-size: 42px;
+    }
 
+    .heading-content p {
+        font-size: 18px;
+    }
 
+    .btn {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
 
+    .orderClass h2 {
+        font-size: 40px;
+    }
 
+    .reserv-class,
+    .login-container {
+        width: 90%;
+    }
+}
