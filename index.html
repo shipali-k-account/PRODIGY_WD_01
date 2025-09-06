@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SavorSpot</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Navigation Menu</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+    <nav id="navbar">
+        <h1 class="logo">SavorSpot</h1>
 
-<header>
-  <nav class="navbar">
-    <h1 class="logo">SavorSpot</h1>
-    <ul class="nav-links">
-      <li><a href="#home" class="nav-link">Home</a></li>
-      <li><a href="#menu" class="nav-link">Menu</a></li>
-      <li><a href="#Reservations" class="nav-link">Reservations</a></li>
-      <li><a href="#order" class="nav-link">Order</a></li>
-      <li><a href="#login" class="nav-link">Login</a></li>
-    </ul>
-  </nav>
+        <ul>
+            <li><a href="#home" class="nav-link"  >Home</a></li>
+            <li><a href="#menu" class="nav-link"  >Menu</a></li>
+            <li><a href="#Reservations" class="nav-link"  >Reservations</a></li>
+            <li><a href="#order" class="nav-link"  >Order Online</a></li>
+            <li><a href="#login" class="nav-link">Login</a></li>
+        </ul>
+    </nav>
 </header>
+<!-- home section-->
 
-<!-- Hero Section -->
-<section id="home" class="hero">
-  <div class="hero-content">
-    <h2>Welcome to SavorSpot</h2>
-    <p>where flavors come to life!</p>
-    <a href="#menu" class="btn">View Menu</a>
-  </div>
+<section id="home" class="heading">
+    <div class="heading-content">
+      <h2>Welcome to SavorSpot</h2>
+      <p> where flavors come to life!</p>
+      <a href="#menu"class="btn">View Menu</a>
+        
+    </div>
 </section>
-
 
 <!-- menu section -->
 <section id="menu" class="menuClass">
@@ -42,6 +43,7 @@
                 <li>Spicy Burger<span>₹249</span></li>
                 <li>Veg. Burger <span>₹199</span></li>
                 <li>Paneer Burger <span>₹229</span></li>
+
             </ul>
         </div>
         <div class="category">
@@ -61,6 +63,7 @@
                     <li>Mango Shake <span>₹129</span></li>
                 </ul>
             </div>
+
             <div class="category">
                 <h2> Desserts</h2>
                 <ul>
@@ -68,12 +71,14 @@
                     <li>Blueberry Cheesecake <span>₹249</span></li>
                     <li>Ice Cream Sundae <span>₹179</span></li>
                 </ul>
-            </div>
+        </div>
     </div>
+    
 </section> 
+
 <!-- Reservation section-->
  <section id="Reservations" class="Reservation">
-<div class="reserv-class">
+.<div class="reserv-class">
     <h2>Make a Reservation</h2>
     <form id="reserv-form">
         <input type="text" id="name" placeholder="Your name" required>
@@ -99,9 +104,14 @@
         <input type="text" id="UserName" placeholder="UserName" required>
         <input type="password" id="password" placeholder="password" required>
         <button type="submit" class="btn" id="btn" >Login </button>
-</form>
+
+    </form>
 </div>
-</section>
+  </section>
+
+
 <script  src="script.js"></script>
+
+    
 </body>
 </html>
